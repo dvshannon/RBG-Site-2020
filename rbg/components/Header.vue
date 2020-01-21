@@ -1,11 +1,8 @@
 <template>
   <div>
     <header class="header menu-area">
-      <div><img src="~/assets/img/rbg_logo.png" style="height: 150px; width:200px" alt=""></div>
-      <ul>
-        <li>
-          <nuxt-link class="nuxt-link" to="/">Home</nuxt-link>
-        </li>
+      <div><nuxt-link class="nuxt-link" to="/"><img src="~/assets/img/rbg_logo.png" class="logo" style="height: 150px; width:200px" alt=""></nuxt-link></div>
+      <ul class="head_ul">
         <li>
           <nuxt-link class="nuxt-link" to="/News">News</nuxt-link>
         </li>
@@ -41,12 +38,21 @@ export default {
 </script>
 
 <style>
+
+.menu-area{
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+
+
+
 .menu-area .nuxt-link{
   display: flex;
   align-items: center;
   justify-content: center;
   color: #fff;
-  background: #cb3529;
   height: 50px;
   text-transform: uppercase;
 }
@@ -84,6 +90,16 @@ export default {
 
 .subnav{
   font-size: 18px;
+}
+
+.head_ul{
+  display: inline-flex;
+  width: 70%;
+}
+
+.logo{
+  display: inline-flex;
+  width: 29%;
 }
 
 
