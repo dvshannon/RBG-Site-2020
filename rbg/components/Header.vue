@@ -33,7 +33,7 @@
 
 <script>
 export default {
-  name: 'AppHeader'
+  name: 'Header'
 }
 </script>
 
@@ -94,7 +94,7 @@ export default {
 
 .head_ul{
   display: inline-flex;
-  width: 70%;
+  width: 100%;
 }
 
 .logo{
