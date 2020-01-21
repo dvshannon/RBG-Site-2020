@@ -18,6 +18,23 @@
                   </ul>
               </div>
           </div>
+          <div class="footer_social_icons_container">
+              <div>
+                  <a href=""><img src="~/assets/img/facebook.png" style="width:35px;height:35px;" alt=""></a>
+              </div>
+              <div>
+                  <a href=""><img src="~/assets/img/twitter.png" style="width:35px;height:35px;" alt=""></a>
+              </div>
+              <div>
+                  <a href=""><img src="~/assets/img/youtube.png" style="width:35px;height:35px;" alt=""></a>
+              </div>
+              <div>
+                  <a href=""><img src="~/assets/img/twitch.png" style="width:35px;height:35px;fill:#C0C6CD" alt=""></a>
+              </div>
+              <div>
+                  <a href=""><img src="~/assets/img/discord.png" style="width:35px;height:35px;fill:#C0C6CD" alt=""></a>
+              </div>
+          </div>
       </footer>
   </div>
 </template>
@@ -40,6 +57,7 @@ footer{
 
 h4{
     align-self: center;
+    color: #AEAEAE;
 }
 
 .footer_links_cotainer{
@@ -50,7 +68,7 @@ h4{
 
 .footer_links_left{
     padding: 15px;
-    border-right: 1px solid white;
+    border-right: 1px solid #AEAEAE;
 }
 
 .footer_links_right{
@@ -82,12 +100,19 @@ padding: 15px;
 }
 
 ul li a{
-    color: white;
+    color: #AEAEAE;
     font-weight: 50;
     font-size: 16px;
 }
 
+.footer_social_icons_container{
+  display: flex;
+  align-self: center;
+}
 
+.footer_social_icons_container a{
+  margin: 0 10px;
+}
 
 
 </style>

@@ -27,6 +27,23 @@
           <nuxt-link class="nuxt-link" to="/ContactUs">Contact Us</nuxt-link>
         </li>
       </ul>
+                  <div class="social_icons_container">
+              <div>
+                  <a href=""><img src="~/assets/img/facebook.png" style="width:25px;height:25px;" alt=""></a>
+              </div>
+              <div>
+                  <a href=""><img src="~/assets/img/twitter.png" style="width:25px;height:25px;" alt=""></a>
+              </div>
+              <div>
+                  <a href=""><img src="~/assets/img/youtube.png" style="width:25px;height:25px;" alt=""></a>
+              </div>
+              <div>
+                  <a href=""><img src="~/assets/img/twitch.png" style="width:25px;height:25px;fill:#C0C6CD" alt=""></a>
+              </div>
+              <div>
+                  <a href=""><img src="~/assets/img/discord.png" style="width:25px;height:25px;fill:#C0C6CD" alt=""></a>
+              </div>
+          </div> 
     </header>
   </div>
 </template>
@@ -104,6 +121,15 @@ export default {
 .logo{
   display: inline-flex;
   width: 29%;
+}
+
+.social_icons_container{
+  display: flex;
+  margin-top: 15px;
+}
+
+.social_icons_container a{
+  margin: 0 10px;
 }
 
 
