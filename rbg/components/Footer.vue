@@ -35,6 +35,7 @@ footer{
     display: flex; 
     background-color:#000000;
     width: 100%;
+    padding-left: 50px;
 }
 
 h4{
