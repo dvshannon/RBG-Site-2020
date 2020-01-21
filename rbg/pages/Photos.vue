@@ -1,20 +1,24 @@
 <template>
   <div class="container">
-    <AppHeader/>
-    <nuxt />
+    <div>
+      <h1>Photos</h1>
+    </div>
   </div>
 </template>
 
-
 <script>
-import AppHeader from '../components/Header';
+import Logo from '~/components/Logo.vue'
+
 export default {
   components: {
-    AppHeader
+    Logo
   }
 }
 </script>
 
 <style>
-
+body{
+    margin: 0;
+    padding: 0;
+}
 </style>
