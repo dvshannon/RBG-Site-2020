@@ -10,7 +10,7 @@
           <a href="https://sectorsixapparel.com/collections/rbg">Shop</a>
         </li> -->
         <li>
-          <nuxt-link class="nuxt-link" to="/OurTeams">Our Teams</nuxt-link>
+          <div class="nuxt-link">Our Teams</div>
           <ul class="dropdown1">
             <li><nuxt-link class="nuxt-link subnav" to="/Teams/CSGO">CS:GO</nuxt-link></li>
             <li><nuxt-link class="nuxt-link subnav" to="/Teams/RocketLeague">Rocket League</nuxt-link></li>
