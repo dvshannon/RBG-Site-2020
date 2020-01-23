@@ -1,8 +1,8 @@
 <template>
-  <div class="container">
+  <div class="container wrapper">
     <Header/>
-    <nuxt />
-    <Footer />
+    <nuxt class="body_container"/>
+    <!-- <Footer  /> -->
   </div>
 </template>
 
@@ -28,5 +28,17 @@ export default {
 
   body{
     background-color: #292929;
+    height: 100%;
   }
+
+  .body_container{
+    position: absolute;
+    top: 150px;
+    height: 200vh;
+  }
+
+  .wrapper{
+    min-height: 100%;
+  }
+  
 </style>

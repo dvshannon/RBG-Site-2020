@@ -10,7 +10,7 @@
           <a href="https://sectorsixapparel.com/collections/rbg">Shop</a>
         </li> -->
         <li>
-          <div class="nuxt-link">Our Teams</div>
+          <nuxt-link class="nuxt-link" to="/Teams">Our Teams</nuxt-link>
           <ul class="dropdown1">
             <li><nuxt-link class="nuxt-link subnav" to="/Teams/CSGO">CS:GO</nuxt-link></li>
             <li><nuxt-link class="nuxt-link subnav" to="/Teams/RocketLeague">Rocket League</nuxt-link></li>
@@ -62,10 +62,9 @@ export default {
   margin-bottom: 50px;
   width:90%;
   padding-left: 50px;
+  position: fixed;
+  z-index: 2;
 }
-
-
-
 
 .menu-area .nuxt-link{
   display: flex;
