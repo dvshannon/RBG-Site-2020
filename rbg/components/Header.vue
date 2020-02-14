@@ -1,136 +1,49 @@
 <template>
   <div>
-    <header class="header menu-area">
+    <b-navbar toggleable="lg">
       <div><nuxt-link class="nuxt-link" to="/"><img src="~/assets/img/rbg_logo.png" class="logo" style="height: 125px; width:175px" alt=""></nuxt-link></div>
-      <ul class="head_ul">
-        <li>
-          <nuxt-link class="nuxt-link" to="/News">News</nuxt-link>
-        </li>
-        <!-- <li>
-          <a href="https://sectorsixapparel.com/collections/rbg">Shop</a>
-        </li> -->
-        <li>
-          <nuxt-link class="nuxt-link" to="/Teams">Our Teams</nuxt-link>
-          <ul class="dropdown1">
-            <li><nuxt-link class="nuxt-link subnav" to="/Teams/CSGO">CS:GO</nuxt-link></li>
-            <li><nuxt-link class="nuxt-link subnav" to="/Teams/RocketLeague">Rocket League</nuxt-link></li>
-            <li><nuxt-link class="nuxt-link subnav" to="/Teams/Halo">Halo</nuxt-link></li>
-          </ul>  
-        </li>
-        <li>
-          <nuxt-link class="nuxt-link" to="/Events">Events</nuxt-link>
-        </li>
-        <li>
-          <nuxt-link class="nuxt-link" to="/Photos">Photos</nuxt-link>
-        </li>
-        <li>
-          <nuxt-link class="nuxt-link" to="/ContactUs">Contact Us</nuxt-link>
-        </li>
-      </ul>
-                  <div class="social_icons_container">
-              <div>
-                  <a href=""><img src="~/assets/img/facebook.png" style="width:25px;height:25px;" alt=""></a>
-              </div>
-              <div>
-                  <a href=""><img src="~/assets/img/twitter.png" style="width:25px;height:25px;" alt=""></a>
-              </div>
-              <div>
-                  <a href=""><img src="~/assets/img/youtube.png" style="width:25px;height:25px;" alt=""></a>
-              </div>
-              <div>
-                  <a href=""><img src="~/assets/img/twitch.png" style="width:25px;height:25px;fill:#C0C6CD" alt=""></a>
-              </div>
-              <div>
-                  <a href=""><img src="~/assets/img/discord.png" style="width:25px;height:25px;fill:#C0C6CD" alt=""></a>
-              </div>
-          </div> 
-    </header>
+
+      <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+
+      <b-collapse id="nav-collapse" is-nav>
+        <b-navbar-nav>
+          <b-nav-item class="nav_link" to="/News">News</b-nav-item>
+          <b-nav-item class="nav_link" href="https://sectorsixapparel.com/collections/rbg">Shop</b-nav-item>
+        </b-navbar-nav>
+
+        <b-navbar-nav>
+          <div >
+            <b-nav-item-dropdown class="nav_link" id="dropdown-1" text="Our Teams" right>
+              <b-dropdown-item class="nav_link" to="/Teams/CSGO">CS:GO</b-dropdown-item>
+              <b-dropdown-item class="nav_link" to="/Teams/RocketLeague">Rocket League</b-dropdown-item>
+              <b-dropdown-item class="nav_link" to="/Teams/Halo">Halo</b-dropdown-item>
+            </b-nav-item-dropdown>
+          </div>
+          
+          <b-navbar-nav>
+          <b-nav-item class="nav_link" to="/Events">Events</b-nav-item>
+          <b-nav-item class="nav_link" to="/Photos">Photos</b-nav-item>
+          <b-nav-item class="nav_link" to="/ContactUs">Contact Us</b-nav-item>
+      </b-navbar-nav>
+
+        </b-navbar-nav>
+      </b-collapse>
+    </b-navbar>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Header'
+  name: 'Header',
 }
 </script>
 
 <style>
-
-.menu-area{
-  display: flex;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  width:90%;
-  padding-left: 50px;
-  position: fixed;
-  z-index: 2;
-}
-
-.menu-area .nuxt-link{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  height: 50px;
-  text-transform: uppercase;
+.nav_link{
+  padding: 0 25px;
   font-size: 25px;
-  font-weight: bolder;
+  font-weight: 300;
 }
-
-.menu-area .nuxt-link:hover{
-  color: #BD161C;
-}
-
-.menu-area ul li{
-  position: relative;
-  width: 100%;
-  text-align: center;
-}
-
-.menu-area ul{
-  list-style: none;
-  display: flex;
-}
-
-.menu-area li:hover .dropdown1 > li{
-  top: 0;
-  display: block;
-}
-
-.dropdown1 li{
-  display: none;
-  position: absolute;
-}
-
-.dropdown1{
-  position: relative;
-  display: flex;
-  flex-direction: column;
-}
-
-.subnav{
-  font-size: 18px;
-}
-
-.head_ul{
-  display: inline-flex;
-  width: 100%;
-}
-
-.logo{
-  display: inline-flex;
-  width: 29%;
-}
-
-.social_icons_container{
-  display: flex;
-  margin-top: 15px;
-}
-
-.social_icons_container a{
-  margin: 0 10px;
-}
-
 
 
 </style>

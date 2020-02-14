@@ -2,7 +2,7 @@
   <div class="container wrapper">
     <Header/>
     <nuxt class="body_container"/>
-    <!-- <Footer  /> -->
+    <Footer  />
   </div>
 </template>
 
@@ -31,14 +31,35 @@ export default {
     height: 100%;
   }
 
-  .body_container{
-    position: absolute;
-    top: 150px;
-    height: 200vh;
+  .navbar-nav .nav-link{
+    color: white !important;
+    font-family: 'Rubik', sans-serif !important;
   }
 
-  .wrapper{
-    min-height: 100%;
+  .navbar-nav .nav-link:hover {
+    color: #f91d27 !important;
+    font-family: 'Rubik', sans-serif !important;
   }
+
+  .dropdown-menu{
+    background: #292929;
+    border: none;
+  }
+
+  .dropdown-item{
+    color: white !important;
+  }
+
+  .dropdown-menu:hover{
+    background: #292929;
+    border: none;
+  }
+
+  .dropdown-item:hover{
+    background: #292929;
+    color: #f91d27 !important;
+  }
+
+
   
 </style>
