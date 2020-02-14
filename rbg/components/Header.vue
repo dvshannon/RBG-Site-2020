@@ -17,6 +17,7 @@
               <b-dropdown-item class="nav_link" to="/Teams/CSGO">CS:GO</b-dropdown-item>
               <b-dropdown-item class="nav_link" to="/Teams/RocketLeague">Rocket League</b-dropdown-item>
               <b-dropdown-item class="nav_link" to="/Teams/Halo">Halo</b-dropdown-item>
+              <b-dropdown-item class="nav_link" to="/Teams/Staff">Staff</b-dropdown-item>
             </b-nav-item-dropdown>
           </div>
           
@@ -40,7 +41,7 @@ export default {
 
 <style>
 .nav_link{
-  padding: 0 25px;
+  padding: 0 10px;
   font-size: 25px;
   font-weight: 300;
 }
