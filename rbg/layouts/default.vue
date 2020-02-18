@@ -31,6 +31,10 @@ export default {
     height: 100%;
   }
 
+  h1{
+  text-align: center;
+}
+
   .navbar-nav .nav-link{
     color: white !important;
     font-family: 'Rubik', sans-serif !important;

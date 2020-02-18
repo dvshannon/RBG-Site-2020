@@ -22,7 +22,7 @@
           </div>
           
           <b-navbar-nav>
-          <b-nav-item class="nav_link" to="/Events">Events</b-nav-item>
+          <!-- <b-nav-item class="nav_link" to="/Events">Events</b-nav-item> -->
           <b-nav-item class="nav_link" to="/Photos">Photos</b-nav-item>
           <b-nav-item class="nav_link" to="/ContactUs">Contact Us</b-nav-item>
       </b-navbar-nav>
