@@ -1,14 +1,15 @@
 <template>
   <div>
     <b-navbar toggleable="lg">
-      <div><nuxt-link class="nuxt-link" to="/"><img src="~/assets/img/rbg_logo.png" class="logo" style="height: 125px; width:175px" alt=""></nuxt-link></div>
+      <div class="logo"><nuxt-link class="nuxt-link" to="/"><img src="~/assets/img/rbg_logo.png" class="logo" style="height: 125px; width:175px" alt=""></nuxt-link></div>
+      <div class="nav_link_container">
 
-      <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+        <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
-      <b-collapse id="nav-collapse" is-nav>
+        <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav>
           <b-nav-item class="nav_link" to="/News">News</b-nav-item>
-          <b-nav-item class="nav_link" href="https://sectorsixapparel.com/collections/rbg">Shop</b-nav-item>
+          <b-nav-item class="nav_link" target="_blank" href="https://sectorsixapparel.com/collections/rbg">Shop</b-nav-item>
         </b-navbar-nav>
 
         <b-navbar-nav>
@@ -29,6 +30,8 @@
 
         </b-navbar-nav>
       </b-collapse>
+      </div>
+      
     </b-navbar>
   </div>
 </template>
@@ -41,9 +44,16 @@ export default {
 
 <style>
 .nav_link{
-  padding: 0 10px;
+  padding: 0 50px;
   font-size: 25px;
   font-weight: 300;
+}
+
+
+@media (min-width: 992px){
+  .nav_link_container{
+    margin-left: 200px;
+  }
 }
 
 

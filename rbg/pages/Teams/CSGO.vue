@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="csgo_container">
         <h1 class="player_headline">CS:GO</h1>
         <div class="player_container_row">
 
@@ -36,6 +36,33 @@
                 </div>
             </div>
 
+            <div class="player_card">
+                <img class="player_photo" src="http://placehold.jp/325x200.png" alt="">
+                <h4 class="player_gamertag">GAMERTAG</h4>
+                <h6 class="player_name">FIRST LAST </h6>
+                <div class="social_media_container">
+                    <a href=""><img src="../../assets/img/social_media/twitter.png" class="social_media_icon" alt=""></a>
+                    <a href=""><img src="../../assets/img/social_media/youtube.png" class="social_media_icon" alt=""></a>
+                    <a href=""><img src="../../assets/img/social_media/twitch.png" class="social_media_icon" alt=""></a> 
+                </div>
+            </div>
+
+            <div class="player_card empty_card">
+                
+                
+            </div>
+
+            <div class="player_card">
+                <img class="player_photo" src="http://placehold.jp/325x200.png" alt="">
+                <h4 class="player_gamertag">GAMERTAG</h4>
+                <h6 class="player_name">FIRST LAST </h6>
+                <div class="social_media_container">
+                    <a href=""><img src="../../assets/img/social_media/twitter.png" class="social_media_icon" alt=""></a>
+                    <a href=""><img src="../../assets/img/social_media/youtube.png" class="social_media_icon" alt=""></a>
+                    <a href=""><img src="../../assets/img/social_media/twitch.png" class="social_media_icon" alt=""></a> 
+                </div>
+            </div>
+
         </div>
     </div>
 
@@ -49,6 +76,10 @@ export default {
 </script>
 
 <style scoped>
+.csgo_container{
+  position: relative;
+}
+
 .player_container_row {
   max-width: 1200px;
   height: 200px;
@@ -91,6 +122,11 @@ h1{
 
 .social_media_container a{
   padding: 15px;
+}
+
+.empty_card{
+  border: none;
+  background-color: #292929;
 }
 
 </style>
